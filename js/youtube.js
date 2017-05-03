@@ -17,9 +17,11 @@ function makeRequest(){
             $.each(srchItems, function(index, item){
             vidTitle = item.snippet.title;  
             vidThumburl =  item.snippet.thumbnails.default.url;                 
-            vidThumbimg = '<pre><img id="thumb" src="'+vidThumburl+'" alt="No  Image  Available." style="width:204px;height:128px"></pre>';                   
+            vidThumbimg = '<pre><img id="thumb" src="'+vidThumburl+'" alt="No  Image  Available." style="width:204px;height:128px"></pre>';  
+            VIDEO_ID = item.id.videoId;                
 
-            $('#results').append('<pre>' + vidTitle + vidThumbimg +   '</pre>');                      
+            $('#results').append('<pre>' + vidTitle +   '</pre>'); 
+            $('#results').append('<iframe id="player" type="text/html" width="640" height="390" src="http://www.youtube.com/embed/<script>inner.HTML='VIDEO_ID'</script>" frameborder="0"></iframe>');                   
     })  
   })  
 }
