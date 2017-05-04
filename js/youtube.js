@@ -8,7 +8,7 @@ function makeRequest(){
     var q = $('#query').val();
     var request = gapi.client.youtube.search.list({
             q: q,
-            part: 'snippet', 
+            part: 'id, snippet',
             maxResults: 10
     });
     request.execute(function(response)  {                                                                                    
@@ -21,7 +21,7 @@ function makeRequest(){
             VIDEO_ID = item.id.videoId;                
 
             $('#results').append('<pre>' + vidTitle +   '</pre>'); 
-            $('#results').append('<iframe id="player" type="text/html" width="640" height="390" src="http://www.youtube.com/embed/<script>inner.HTML='VIDEO_ID'</script>" frameborder="0"></iframe>');                   
+            $('#results').append('<iframe id="player" type="text/html" width="640" height="390" src="http://www.youtube.com/embed/'+VIDEO_ID+'" frameborder="0" allowfullscreen="1"></iframe>');                   
     })  
   })  
 }
