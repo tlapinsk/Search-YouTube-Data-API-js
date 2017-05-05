@@ -2,14 +2,34 @@
 <html>
   <head>
   <title>Search</title>
+  <!-- Material Design fonts -->
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Roboto:300,400,500,700">
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/icon?family=Material+Icons">
+ 
+  <!-- Bootstrap -->
+  <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+ 
+  <!-- Bootstrap Material Design -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap-material-design.css">
+  <link rel="stylesheet" type="text/css" href="css/ripples.min.css">
   </head>
+
   <body>
-    <div id="buttons">
-    <label> <input id="query" value='Closer The Chainsmokers' type="text"/><button id="search-button"    onclick="keyWordsearch()">Search</button></label>    
-    <div id="container">
-    <h1>Search Results</h1>
-    <ul id="results"></ul>
-    </div>           
+
+    <form class="navbar-form navbar-center">
+      <div class="form-group">
+        <input type="text" id="query" class="form-control" placeholder="Search" onkeypress="handle(event)" />
+        <!-- <input type="submit" id="query" value="Search" onclick="keyWordsearch()" /> -->
+      </div>
+    </form>   
+
+    <div class="modal-body container" style="text-align: center">
+      <div class="row">
+          <div class="col-md-4">
+              <ul id="results"></ul>
+          </div>
+      </div>
+    </div>        
  
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
  <script src="https://apis.google.com/js/client.js?onload=googleApiClientReady"></script>
