@@ -5,34 +5,50 @@
   <!-- Material Design fonts -->
   <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Roboto:300,400,500,700">
   <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/icon?family=Material+Icons">
- 
   <!-- Bootstrap -->
   <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
- 
   <!-- Bootstrap Material Design -->
   <link rel="stylesheet" type="text/css" href="css/bootstrap-material-design.css">
   <link rel="stylesheet" type="text/css" href="css/ripples.min.css">
   </head>
 
   <body>
-
-    <form class="navbar-form navbar-center">
-      <div class="form-group">
-        <input type="text" id="query" class="form-control" placeholder="Search" onkeypress="handle(event)" />
-        <!-- <input type="submit" id="query" value="Search" onclick="keyWordsearch()" /> -->
+    <div class="row search">
+      <div class="form-group has-feedback col-md-8">
+        <div class="col-md-offset-4">
+          <input type="text" class="form-control input-lg" id="query" id="inputLarge" placeholder="Song, Artist, etc." onkeypress="handle(event)"/>
+          <i class="glyphicon glyphicon-search form-control-feedback"></i>
+        </div>
       </div>
-    </form>   
+    </div>
 
-    <div class="modal-body container" style="text-align: center">
+    <div class="container">
       <div class="row">
-          <div class="col-md-4">
-              <ul id="results"></ul>
-          </div>
+        <h2>YouTube Results</h1>
+        <div id="youtube1" class="col-md-4" ></div>
+        <div id="youtube2" class="col-md-4" ></div>
+        <div id="youtube3" class="col-md-4" ></div>
+        <div id="youtube4" class="col-md-4" ></div>
+        <div id="youtube5" class="col-md-4" ></div>
+        <div id="youtube6" class="col-md-4" ></div>
+        <!-- <div class="col-md-4" ><p>Box 7</p></div>
+        <div class="col-md-4" ><p>Box 8</p></div>
+        <div class="col-md-4" ><p>Box 9</p></div>
+        <div class="col-md-4" ><p>Box 10</p></div>
+        <div class="col-md-4" ><p>Box 11</p></div>
+        <div class="col-md-4" ><p>Box 12</p></div> -->
       </div>
-    </div>        
- 
- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
- <script src="https://apis.google.com/js/client.js?onload=googleApiClientReady"></script>
- <script type="text/javascript" src="js/youtube.js"></script>
+    </div>
+
+  <script src="https://apis.google.com/js/client.js?onload=googleApiClientReady"></script>
+  <script type="text/javascript" src="js/youtube.js"></script>
+  <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+  <script src="https://cdn.rawgit.com/HubSpot/tether/v1.3.4/dist/js/tether.min.js"></script>
+  <script src="https://cdn.rawgit.com/FezVrasta/bootstrap-material-design/dist/dist/bootstrap-material-design.iife.min.js"></script>
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <script src="https://maxcdn.bootstrapcdn.com/js/ie10-viewport-bug-workaround.js"></script>
+  <script>
+    $('body').bootstrapMaterialDesign();
+  </script>
 </body>
 </html>
