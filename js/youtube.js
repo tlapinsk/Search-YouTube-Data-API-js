@@ -21,9 +21,12 @@ function makeRequest(){
             maxResults: 6
     });
     request.execute(function(response)  {                                                                                    
-            $('#results').empty()
+            $('#youtube1,#youtube2,#youtube3,#youtube4,#youtube5,#youtube6').each(function(){
+              $(this).empty({
+              });
+            });
             var srchItems = response.result.items;  
-            var arr = new Array();                    
+            var arr = [];                    
             $.each(srchItems, function(index, item){
             vidTitle = item.snippet.title;  
             vidThumburl =  item.snippet.thumbnails.default.url;                 
