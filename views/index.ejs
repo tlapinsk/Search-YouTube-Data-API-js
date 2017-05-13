@@ -14,9 +14,12 @@
 </head>
 <body>
   <div class="container">
-  	<div class="text-right">
-      <a href="/login" class="btn btn-raised btn-active"><span class="fa fa-user"></span> Login</a>
-  		<a href="/signup" class="btn btn-raised btn-success"><span class="fa fa-user"></span> Signup</a>
+  	<div class="text-right" class="login_cond">
+
+      <a href="/login" class="btn btn-raised btn-active" id="loggedout"><span class="fa fa-user"></span> Login</a>
+      <a href="/signup" class="btn btn-raised btn-success" id="loggedout"><span class="fa fa-user"></span> Signup</a> 
+      <a href="/logout" class="btn btn-raised btn-danger" id="logout"><span class="fa fa-user"></span> Logout</a>     
+
   	</div>
   </div>
 
@@ -33,12 +36,12 @@
   <div class="container">
     <div class="row" id="youtube">
       <h2>YouTube Results</h2>
-      <div id="youtube1" class="col-md-4" ></div>
-      <div id="youtube2" class="col-md-4" ></div>
-      <div id="youtube3" class="col-md-4" ></div>
-      <div id="youtube4" class="col-md-4" ></div>
-      <div id="youtube5" class="col-md-4" ></div>
-      <div id="youtube6" class="col-md-4" ></div>
+      <div id="youtube1" class="col-md-4" class="withoutripple"></div>
+      <div id="youtube2" class="col-md-4" class="withoutripple"></div>
+      <div id="youtube3" class="col-md-4" class="withoutripple"></div>
+      <div id="youtube4" class="col-md-4" class="withoutripple"></div>
+      <div id="youtube5" class="col-md-4" class="withoutripple"></div>
+      <div id="youtube6" class="col-md-4" class="withoutripple"></div>
     </div>
   </div>
 
