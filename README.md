@@ -2,13 +2,20 @@
 A simple web app to find and play YouTube results via the [YouTube Data API](https://developers.google.com/youtube/v3/getting-started)
 
 ## System Dependencies
+**YouTube API Key Creation**
+1. Visit the [Google Developer Console](https://console.developers.google.com).
+2. Open the Credentials tab.
+3. Create Credentials (if necessary).
+4. Grab the Key from the Credentials tab.
+5. Insert into [youtube.js](https://github.com/tlapinsk/Search-YouTube-Data-API-js/blob/master/public/js/youtube.js) on line 10.
 
-Node Version: 7.9.0
-NPM Version: 4.2.0
+Other important installations (minus Nodemon):
 
-[mongo DB](https://github.com/mongodb/mongo)
-[Express](https://github.com/expressjs/express)
-[Nodemon](https://github.com/remy/nodemon)
+- Node Version: 7.9.0
+- NPM Version: 4.2.0
+- [mongo DB](https://github.com/mongodb/mongo)
+- [Express](https://github.com/expressjs/express)
+- [Nodemon](https://github.com/remy/nodemon)
 
 See [package.json](https://github.com/tlapinsk/Search-YouTube-Data-API-js/blob/master/package.json) for full list of dependencies and versions.
 
@@ -36,6 +43,6 @@ Storage: 500gb Samsung SSD
 
 3. Using a browser, go to http://localhost:8080 and you will see the application homepage.
 
-
 ## Known bugs
-Black circle flashing on YouTube results. Believe it's from the [Bootstrap-Material-Design's](insert link here) ripple effect
+
+1. Flashing black circle on returned YouTube results. I believe it is from [Bootstrap-Material-Design's](https://github.com/FezVrasta/bootstrap-material-design) ripple effect
