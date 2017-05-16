@@ -7,7 +7,7 @@ function handle(e){
 }
 
 function keyWordsearch(){
-    gapi.client.setApiKey('AIzaSyDYx5RuJS8QHTDWW1ZlCIWET15bs3WaNWk');
+    gapi.client.setApiKey('INSERT API KEY');
     gapi.client.load('youtube', 'v3', function(){
             makeRequest();
     });
