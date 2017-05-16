@@ -1,5 +1,7 @@
 # YouTube Streaming Web App 
-A simple web app to find and play YouTube results via the [YouTube Data API](https://developers.google.com/youtube/v3/getting-started)
+A simple web app to find and play YouTube results via the [YouTube Data API](https://developers.google.com/youtube/v3/getting-started).
+
+Shoutout to [Scotch.io](https://github.com/scotch-io/easy-node-authentication) for the authentication tutorial.
 
 ## System Dependencies
 **YouTube API Key Creation**
