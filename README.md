@@ -50,4 +50,4 @@ Storage: 500gb Samsung SSD
 1. Flashing black circle on returned YouTube results. I believe it is from [Bootstrap-Material-Design's](https://github.com/FezVrasta/bootstrap-material-design) ripple effect
 
 ## Getting in touch
-Feel free to shoot me any questions at tim.lapinskas@gmail.com!
+Feel free to shoot over any questions to tim.lapinskas@gmail.com!
