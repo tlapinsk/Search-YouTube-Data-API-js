@@ -22,11 +22,8 @@ See [package.json](https://github.com/tlapinsk/Search-YouTube-Data-API-js/blob/m
 _Note: I did not test the application on Windows, and I run the following system_
 
 Macbook Pro (15-inch, Mid 2010)
-
 macOS Sierra | Version 10.12.4
-
 Memory: 8gb
-
 Storage: 500gb Samsung SSD
 
 ## Getting Started
