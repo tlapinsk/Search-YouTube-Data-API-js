@@ -9,7 +9,7 @@ A simple web app to find and play YouTube results via the [YouTube Data API](htt
 4. Grab the Key from the Credentials tab.
 5. Insert into [youtube.js](https://github.com/tlapinsk/Search-YouTube-Data-API-js/blob/master/public/js/youtube.js) on line 10.
 
-Other important installations (minus Nodemon):
+**Other important installations (minus Nodemon):**
 
 - Node Version: 7.9.0
 - NPM Version: 4.2.0
@@ -46,3 +46,6 @@ Storage: 500gb Samsung SSD
 ## Known bugs
 
 1. Flashing black circle on returned YouTube results. I believe it is from [Bootstrap-Material-Design's](https://github.com/FezVrasta/bootstrap-material-design) ripple effect
+
+## Getting in touch
+Feel free to shoot me any questions at tim.lapinskas@gmail.com!
