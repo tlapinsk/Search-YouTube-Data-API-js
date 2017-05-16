@@ -3,8 +3,8 @@ A simple web app to find and play YouTube results via the [YouTube Data API](htt
 
 ## System Dependencies
 
-Node Version: 7.9.0
-NPM Version: 4.2.0
+- Node Version: 7.9.0
+- NPM Version: 4.2.0
 
 [mongo DB](https://github.com/mongodb/mongo)
 [Express](https://github.com/expressjs/express)
